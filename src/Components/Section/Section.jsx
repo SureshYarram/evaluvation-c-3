@@ -28,7 +28,7 @@ export const Section = () => {
     if(title === "price" && value === 1) setSectionbook(prev=>[...prev.sort((a,b)=>a.price-b.price)])
     else if(title === "price" && value === -1) setSectionbook(prev=>[...prev.sort((a,b)=>b.price-a.price)])
     else if(title === "title" && value === -1) setSectionbook(prev=>[...prev.sort((a,b)=>{if(a.title>b.title)return -1})])
-    else if(title === "title" && value === 1) setSectionb ook(prev=>[...prev.sort((a,b)=>{if(b.title>a.title)return -1})])
+    else if(title === "title" && value === 1) setSectionbook(prev=>[...prev.sort((a,b)=>{if(b.title>a.title)return -1})])
   }
   return (
     <>
